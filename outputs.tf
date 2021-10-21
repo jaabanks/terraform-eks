@@ -3,7 +3,7 @@ output "cluster_name" {
   value       = local.cluster_name
 }
 
-# output "ip-address" {
-#   description = "Kubernetes Cluster IP_Adress"
-#   value       = data.aws_eks_cluster.cluster.ip_address
-# }
+output "ip-address" {
+  description = "Kubernetes Cluster IP_Adress"
+  value       = data.aws_eks_cluster.cluster.ip_address
+}
